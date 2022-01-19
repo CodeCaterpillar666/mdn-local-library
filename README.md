@@ -12,5 +12,8 @@ Some questions after completing this tutorial:
 2. How to add authentication on this project?
 3. How to deploy this project onto some other cloud, say AWS?
 4. How to write good commit messages and README.md?
+## Plans
+1. Add search engine.
+2. Improve UI. May even switch from template engine to React.
 
 
