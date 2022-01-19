@@ -8,11 +8,11 @@ var logger = require('morgan');
 var mongoose = require('mongoose');
 // For the convenience of copying this mongodb url, leave it below:
 // mongodb+srv://dbUser:dbUserPassword@cluster0.9ozbl.mongodb.net/local_library?retryWrites=true&w=majority
-// var mongoDB = 'mongodb+srv://dbUser:dbUserPassword@cluster0.9ozbl.mongodb.net/local_library?retryWrites=true&w=majority';
+var mongoDB = 'mongodb+srv://dbUser:dbUserPassword@cluster0.9ozbl.mongodb.net/local_library?retryWrites=true&w=majority';
 // To deploy the project on heroku, replace mongoDB.
 // Set up mongoose connection
-var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0-mbdj7.mongodb.net/local_library?retryWrites=true'
-var mongoDB = process.env.MONGODB_URI || dev_db_url;
+// var dev_db_url = 'mongodb+srv://cooluser:coolpassword@cluster0-mbdj7.mongodb.net/local_library?retryWrites=true'
+// var mongoDB = process.env.MONGODB_URI || dev_db_url;
 
 mongoose.connect(mongoDB, { useNewUrlParser: true , useUnifiedTopology: true});
 var db = mongoose.connection;
